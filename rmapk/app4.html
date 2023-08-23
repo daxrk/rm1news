@@ -5,75 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rm1news</title>
+    <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik:wght@300&family=Tajawal:wght@500&display=swap"
         rel="stylesheet">
-<style>* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Belanosima', sans-serif;
-    font-family: 'Rubik', sans-serif;
-    font-family: 'Tajawal', sans-serif;
-}
 
-iframe {
-    min-height: 3000px;
-}
-
-.fa.fa-newspaper-o {
-    vertical-align: middle;
-}
-
-footer {
-    position: fixed;
-    display: block;
-    background-color: #fff;
-    width: 100%;
-    text-align: center;
-    border-top: 2px solid rgb(218, 85, 85);
-    user-select: none;
-    padding: 10px 0;
-    bottom: 0;
-    box-shadow: 0 4px 24px rgb(0 0 0 / 25%);
-}
-
-footer span {
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 17px;
-    width: 15%;
-
-}
-
-.goo {
-    visibility: hidden;
-    opacity: 0;
-    font-size: 0px;
-}
-
-
-#no .active1>kl.goo {
-    display: inline-block;
-    visibility: visible;
-    opacity: 1;
-    font-size: 14px;
-    transition: 0.2s;
-    /* وأي تعديلات أخرى ترغب في تطبيقها على الكلاس active */
-}
-
-
-.active1 {
-    border-radius: 20px;
-    background-color: rgb(218, 85, 85);
-    width: 30%;
-    transition: 0.2s;
-    box-shadow: 0 4px 24px rgb(0 0 0 / 25%);
-}</style>
 
 </head>
 
@@ -103,38 +42,7 @@ footer span {
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript">$(document).ready(function () {
-    var items = $("footer span");
-
-    items.click(schh);
-
-
-    function schh() {
-        items.removeClass("active1");
-        $(this).addClass("active1");
-    }
-
-    $("footer span:nth-child(1)").addClass("active1");
-    // When the element with the ID 'se' is clicked
-    $("#se").click(function () {
-        // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/search/label/سياسة");
-    })
-    $("#news").click(function () {
-        // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/search/label/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1");
-    })
-    $("#torke").click(function () {
-        // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/search/label/%D8%AA%D8%B1%D9%83%D9%8A%D8%A7");
-    })
-    $("#sport").click(function () {
-        // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/search/label/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9");
-    })
-});
-
-</script>
+        <script src="app.js"></script>
 </body>
 
 </html>
