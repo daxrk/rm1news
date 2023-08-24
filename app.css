@@ -8,11 +8,14 @@
     font-family: 'Tajawal', sans-serif;
 }
 
+
+
 iframe {
     min-height: 3000px;
+    margin-left: -3px;
 }
 
-.fa.fa-newspaper-o {
+footer span i {
     vertical-align: middle;
 }
 
@@ -24,7 +27,7 @@ footer {
     text-align: center;
     border-top: 2px solid rgb(218, 85, 85);
     user-select: none;
-    padding: 10px 0;
+    padding: 15px 0;
     bottom: 0;
     box-shadow: 0 4px 24px rgb(0 0 0 / 25%);
 }
@@ -32,8 +35,9 @@ footer {
 footer span {
     display: inline-block;
     padding: 5px 10px;
-    font-size: 17px;
+    font-size: 22px;
     width: 15%;
+
 
 }
 
@@ -48,7 +52,7 @@ footer span {
     display: inline-block;
     visibility: visible;
     opacity: 1;
-    font-size: 14px;
+    font-size: 17px;
     transition: 0.2s;
     /* وأي تعديلات أخرى ترغب في تطبيقها على الكلاس active */
 }
@@ -60,4 +64,5 @@ footer span {
     width: 30%;
     transition: 0.2s;
     box-shadow: 0 4px 24px rgb(0 0 0 / 25%);
+    color: white;
 }
