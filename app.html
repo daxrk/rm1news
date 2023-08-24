@@ -12,14 +12,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik:wght@300&family=Tajawal:wght@500&display=swap"
         rel="stylesheet">
+    <script>
+        // عند تحميل الصفحة
+        window.onload = function () {
+            // الحصول على عنصر iframe باستخدام الهوية
+            var iframe = document.getElementById("myIframe");
 
+            // التحقق من تواجد الـ iframe
+            if (iframe) {
+                // الوصول إلى نافذة الـ iframe
+                var iframeWindow = iframe.contentWindow;
+
+                // التأكد من أن النافذة ليست فارغة
+                if (iframeWindow.document.body) {
+                    // تغيير نص داخل الـ iframe
+                    iframeWindow.document.body.innerHTML = "<h1>تم تعديل النص داخل الـ iframe</h1>";
+                }
+            }
+        };
+    </script>
 
 </head>
 
 <body>
 
-    <iframe src="https://www.rm1news.com/search/label/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1" width="100%" height="100%"
-        frameborder="0" allowfullscreen></iframe>
+    <iframe id="myIframe" src="https://www.rm1news.com/search/label/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/?m=1" width="100%"
+        height="100%" frameborder="0" allowfullscreen></iframe>
     <footer>
         <footer>
             <div id="no">
@@ -28,15 +46,15 @@
                     <kl class="goo">أخبار</kl>
                 </span>
                 <span id="torke">
-                    <i class="fa fa-newspaper-o"></i>
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
                     <kl class="goo">تركيا</kl>
                 </span>
                 <span id="se">
-                    <i class="fa fa-newspaper-o"></i>
+                    <i class="fa fa-university" aria-hidden="true"></i>
                     <kl class="goo">سياسه</kl>
                 </span>
                 <span id="sport">
-                    <i class="fa fa-newspaper-o"></i>
+                    <i class="fa fa-futbol-o" aria-hidden="true"></i>
                     <kl class="goo">رياضه</kl>
                 </span>
             </div>
