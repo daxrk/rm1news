@@ -10,8 +10,9 @@
 
 
 
-embed {
+iframe {
     min-height: 3000px;
+    margin-left: -2.5px;
 }
 
 footer span i {
