@@ -170,6 +170,12 @@ footer span {
     color: #606060;
 }
 
+#torke svg {
+    width: 22px;
+    height: 18px;
+    vertical-align: middle;
+}
+
 #open-menu,
 #close-menu {
     border: 0;
