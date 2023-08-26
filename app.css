@@ -13,7 +13,7 @@
 #rmimg {
     width: 100%;
     height: 180px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #rmimg img {
@@ -24,6 +24,7 @@
 iframe {
     min-height: 3000px;
     margin-left: -2px;
+    margin-top: -52px;
 }
 
 footer span i {
@@ -82,7 +83,7 @@ footer span {
 }
 
 #call {
-    padding: 11px;
+    padding: 4px;
     text-align: center;
     border-top: 1px solid #e64747;
     position: absolute;
@@ -162,6 +163,20 @@ footer span {
     color: #313131;
 }
 
+#sucial .fa {
+    vertical-align: middle;
+}
+
+#sucial svg {
+    fill: white;
+    vertical-align: middle;
+
+}
+
+#sucial svg path {
+    fill: white;
+}
+
 .fa.fa-angle-right {
     position: absolute;
     right: 0;
@@ -190,12 +205,20 @@ footer span {
 }
 
 #sucial a {
-    padding: 10px;
+    padding: 6px 9px;
     color: white;
     border: 1px solid white;
-    border-radius: 41px;
-    font-size: 16px;
-    height: 38px;
+    border-radius: 100px;
+    font-size: 13px;
+    height: auto;
+    display: inline-block;
+}
+
+#call img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 3px;
 }
 
 #open-menu::before {
@@ -217,6 +240,14 @@ ul li a::before {
 
 #ad::before {
     content: '\f0a1';
+}
+
+#share::before {
+    content: '\f1e0';
+}
+
+#dark::before {
+    content: '\f186';
 }
 
 #open-menu::before,
