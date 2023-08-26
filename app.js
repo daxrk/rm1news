@@ -6,7 +6,6 @@ $(document).ready(function () {
     function schh() {
         items.removeClass("active1");
         $(this).addClass("active1");
-        $("#torke svg path").css("fill", "white")
     }
 
     $("footer span:nth-child(1)").addClass("active1");
@@ -81,6 +80,30 @@ $(document).ready(function () {
         $("#navbarClose").removeClass("active5");
     }
     $("#side-menu li a").append('<i class="fa fa-angle-right" aria-hidden="true"></i>');
+    var darkMode = false;
 
+    $("#dark").click(function () {
+        darkMode = !darkMode;
+
+        if (darkMode) {
+            $("#dark").text("الوضع الضوء");
+            $("#side-menu").css("background-color", "#171717");
+            $("#side-menu ul li").css("background-color", "#171717");
+            $("#side-menu a").css("color", "#fff");
+            $("#call").css({
+                "background-color": "#171717",
+                "color": "#fff"
+            });
+        } else {
+            $("#dark").text("الوضع الداكن");
+            $("#side-menu").css("background-color", ""); // Reset to default
+            $("#side-menu ul li").css("background-color", ""); // Reset to default
+            $("#side-menu a").css("color", ""); // Reset to default
+            $("#call").css({
+                "background-color": "", // Reset to default
+                "color": "" // Reset to default
+            });
+        }
+    });
 });
 
