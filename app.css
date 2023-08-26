@@ -190,13 +190,12 @@ footer span {
 }
 
 #sucial a {
-    padding: 8px 0px 0px 9px;
+    padding: 10px;
     color: white;
     border: 1px solid white;
     border-radius: 41px;
     font-size: 16px;
-    height: 35px;
-    width: 35px;
+    height: 38px;
 }
 
 #open-menu::before {
