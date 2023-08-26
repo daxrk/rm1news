@@ -26,6 +26,8 @@
     height: 100vh;
     /* 100٪ من ارتفاع الشاشة الظاهرية */
     border: none;
+    margin-left: -2px;
+    margin-top: -52px;
     /* اختياري: لإزالة حدود الإطار */
 }
 
