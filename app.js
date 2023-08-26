@@ -6,6 +6,7 @@ $(document).ready(function () {
     function schh() {
         items.removeClass("active1");
         $(this).addClass("active1");
+        $("#torke svg path").css("fill", "white")
     }
 
     $("footer span:nth-child(1)").addClass("active1");
