@@ -17,63 +17,76 @@
 </head>
 
 <body>
+    <header>
 
-    <iframe src="https://www.rm1news.com/search/label/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1" width="100%"
-        height="100%"></iframe>
+        <div class="container">
+            <button id="open-menu"></button>
+            <button id="home"></button>
+
+        </div>
+    </header>
+    <div id="side-menu">
+        <div id="rmimg">
+            <img src="apk.jpg" alt="rm1news">
+        </div>
+        <ul>
+            <li><a id="not"
+                    href="https://news.google.com/publications/CAAqBwgKMJyTiwsw09DqAg?r=0&oc=1&hl=en-US&gl=US&ceid=US:en"
+                    target="_blank">الإشعارات
+                </a></li>
+            <li><a id="me">معلومات عنا</a></li>
+            <li><a id="star" href="#">قيمنا</a></li>
+            <li><a id="ad" href="#">الإعلان معنا</a></li>
+        </ul>
+        <div id="call">
+            <span id="seicurty">سياسة الخصوصية</span>
+            <span id="callme">أتصل بنا</span>
+            <span id="who">من نحن</span>
+        </div>
+        <div id="sucial">
+            <a href="https://www.facebook.com/profile.php?id=100090963901017" target="_blank"> <i class="fa fa-facebook"
+                    aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/rm1news" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/@rm1news" target="_blank"> <i class="fa fa-youtube-play"
+                    aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/rm1news/" target="_blank"> <i class="fa fa-instagram"
+                    aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <div id="navbarClose" class=""></div>
+    <iframe src="https://www.rm1news.com" width="100%" height="100%"></iframe>
+
     <footer>
-        <footer>
-            <div id="no">
-                <span id="news">
-                    <i class="fa fa-newspaper-o"></i>
-                    <kl class="goo">أخبار</kl>
-                </span>
-                <span id="torke">
-                    <i class="fa fa-quote-right"></i>
-                    <kl class="goo">تركيا</kl>
-                </span>
-                <span id="se">
-                    <i class="fa fa-university"></i>
-                    <kl class="goo">سياسه</kl>
-                </span>
-                <span id="sport">
-                    <i class="fa fa-futbol-o"></i>
-                    <kl class="goo">رياضه</kl>
-                </span>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript">$(document).ready(function () {
-                var items = $("footer span");
+        <div id="no">
+            <span id="home1">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <kl class="goo">الرئيسيه</kl>
+            </span>
+            <span id="news">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                <kl class="goo">أخبار</kl>
+            </span>
+            <span id="torke">
+                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                <kl class="goo">تركيا</kl>
+            </span>
+            <span id="se">
+                <i class="fa fa-university" aria-hidden="true"></i>
+                <kl class="goo">سياسه</kl>
+            </span>
+            <span id="sport">
+                <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                <kl class="goo">رياضه</kl>
+            </span>
+        </div>
+    </footer>
 
-                items.click(schh);
-
-
-                function schh() {
-                    items.removeClass("active1");
-                    $(this).addClass("active1");
-                }
-
-                $("footer span:nth-child(1)").addClass("active1");
-                // When the element with the ID 'se' is clicked
-                $("#se").click(function () {
-                    // Update the source of the iframe
-                    $("iframe").attr("src", "https://www.rm1news.com/search/label/سياسة");
-                })
-                $("#news").click(function () {
-                    // Update the source of the iframe
-                    $("iframe").attr("src", "https://www.rm1news.com/search/label/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1");
-                })
-                $("#torke").click(function () {
-                    // Update the source of the iframe
-                    $("iframe").attr("src", "https://www.rm1news.com/search/label/%D8%AA%D8%B1%D9%83%D9%8A%D8%A7");
-                })
-                $("#sport").click(function () {
-                    // Update the source of the iframe
-                    $("iframe").attr("src", "https://www.rm1news.com/search/label/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9");
-                })
-            });
-
-        </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
