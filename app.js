@@ -113,5 +113,9 @@ $(document).ready(function () {
             });
         }
     });
-});
 
+});
+window.addEventListener('resize', function () {
+    var iframe = document.getElementById('myIframe');
+    iframe.style.height = window.innerHeight + 'px';
+});
