@@ -1,12 +1,20 @@
 $(document).ready(function () {
     var items = $("footer span");
-    items.click(schh);
+    var svgPath = $("#torke svg path");
 
-
-    function schh() {
+    items.click(function () {
         items.removeClass("active1");
         $(this).addClass("active1");
-    }
+
+        // إعادة جميع مسارات svg إلى اللون الأسود
+        svgPath.css("fill", "#000");
+
+        // تغيير لون مسار svg الخاص بالزر النشط إلى اللون الأبيض
+        if ($(this).attr("id") === "torke") {
+            svgPath.css("fill", "#fff");
+        }
+    });
+
 
     $("footer span:nth-child(1)").addClass("active1");
     // When the element with the ID 'se' is clicked
