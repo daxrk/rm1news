@@ -24,9 +24,11 @@
 #myIframe {
     width: 100%;
     height: 100vh;
-    /* 100٪ من ارتفاع الشاشة الظاهرية */
+    /* 100٪
+     من ارتفاع الشاشة الظاهرية */
     border: none;
-margin-left: -2px;
+    margin-left: -2px;
+    margin-top: -52px;
     /* اختياري: لإزالة حدود الإطار */
 }
 
@@ -67,6 +69,11 @@ footer span {
     width: 15%;
 
 
+}
+
+#no a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .goo {
