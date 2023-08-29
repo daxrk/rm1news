@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="frame-src *">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content='upgrade-insecure-requests' http-equiv='Content-Security-Policy'>
     <title>rm1news</title>
@@ -20,7 +21,8 @@
     <header>
 
         <div class="container">
-            <button id="open-menu"></button>
+            <a href="###">
+                <button id="open-menu"></button></a>
             <button id="home"></button>
 
         </div>
@@ -31,7 +33,7 @@
         </div>
         <ul>
             <li><a id="not"
-                    href="https://news.google.com/publications/CAAqBwgKMJyTiwsw09DqAg?r=0&oc=1&hl=en-US&gl=US&ceid=US:en"
+                    href="https://news.google.com/publications/CAAqBwgKMIqjiwswweDqAg?r=0&oc=1&hl=en-US&gl=US&ceid=US:en"
                     target="_blank">الإشعارات
                 </a></li>
             <li><a id="me">معلومات عنا</a></li>
@@ -82,9 +84,12 @@
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <kl class="goo">الرئيسيه</kl>
             </span>
+
             <span id="news">
-                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                <kl class="goo">أخبار</kl>
+                <a href="##">
+                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                    <kl class="goo">أخبار</kl>
+                </a>
             </span>
             <span id="torke">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1200.000000pt" height="872.000000pt"
@@ -116,8 +121,10 @@
                 <kl class="goo">سياسه</kl>
             </span>
             <span id="sport">
-                <i class="fa fa-futbol-o" aria-hidden="true"></i>
-                <kl class="goo">رياضه</kl>
+                <a href="##">
+                    <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                    <kl class="goo">رياضه</kl>
+                </a>
             </span>
         </div>
     </footer>
