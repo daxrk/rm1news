@@ -32,35 +32,35 @@ $(document).ready(function () {
     });
     $("#se").click(function () {
         // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/search/label/سياسة");
+        $("iframe").attr("src", "https://www.rm1news.com/category/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9");
     });
     $("#news").click(function () {
         // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/search/label/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1");
+        $("iframe").attr("src", "https://www.rm1news.com/category/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1");
     });
     $("#torke").click(function () {
         // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/search/label/%D8%AA%D8%B1%D9%83%D9%8A%D8%A7");
+        $("iframe").attr("src", "https://www.rm1news.com/category/%D8%AA%D8%B1%D9%83%D9%8A%D8%A7");
     });
     $("#sport").click(function () {
         // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/search/label/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9");
+        $("iframe").attr("src", "https://www.rm1news.com/category/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9");
     });
     $("#seicurty").click(function () {
         // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/p/blog-page_17.html");
+        $("iframe").attr("src", "https://www.rm1news.com/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9");
     });
     $("#callme").click(function () {
         // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/p/blog-page_49.html");
+        $("iframe").attr("src", "https://www.rm1news.com/");
     });
     $("#who").click(function () {
         // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/p/blog-page_59.html");
+        $("iframe").attr("src", "https://www.rm1news.com/");
     });
     $("#ad").click(function () {
         // Update the source of the iframe
-        $("iframe").attr("src", "https://www.rm1news.com/p/blog-page_47.html");
+        $("iframe").attr("src", "https://www.rm1news.com/%D9%84%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86");
     });
 
     $("#open-menu").click(function () {
